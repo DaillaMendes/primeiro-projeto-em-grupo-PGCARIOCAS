@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato SquadOne</title>
+  <link rel="stylesheet" type="text/css" href="projeto.css" />
+  <link rel="stylesheet" type="text/css" href="menu.css" />
+
+
+</head>
+
+<body>
+  <h3>SquadOne - Programação Básica</h3>
+  <nav class="nav">
+    <ul>
+      <li><a href="quemSomos.html">QUEM SOMOS</a>
+      <li><a href="produtos.html">PRODUTOS</a>
+      <li><a href="equipe.html">EQUIPE</a>
+      <li><a href="contato.html">CONTATO</a>
+    </ul>
+  </nav>
+
+
+  <div class="container">
+    <h2>Entre em contato conosco</h2>
+    <form id="contact_form" action="mailto: russelmytho@gmail.com" method="POST" enctype="multipart/form-data">
+
+      <label class="required" for="name">Nome:</label><br />
+      <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+      <span id="name_validation" class="error_message"></span>
+
+      <label class="required" for="email">Email:</label><br />
+      <input id="email" class="input" name="email" type="email" value="" size="30" /><br />
+      <span id="email_validation" class="error_message"></span>
+
+      <label class="required" for="message">Mensagem:</label><br />
+      <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+      <span id="message_validation" class="error_message"></span>
+
+      <input id="submit_button" type="submit" onclick="validar()" />
+  </div>
+
+  <script src="assets/projeto.js"></script>
+
+</body>
+
+</html>
